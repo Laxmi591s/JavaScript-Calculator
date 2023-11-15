@@ -1,15 +1,16 @@
-let string = "";
-let buttons = document.querySelectorAll('.button');
-Array.from(buttons).forEach((button) => {
-  button.addEventListener('click', (e) => {
-    if (e.target.innerHTML == '=') {
-      string = eval(string);
-      document.querySelector('input').value = string;
-    }
-    else {
-      console.log(e.target)
-      string = string + e.target.innerHTML;
-      document.querySelector('input').value = string;
-    }
-  })
-})
+function appendToDisplay(value) {
+  document.forms[0].display.value += value;
+}
+
+function clearDisplay() {
+  document.forms[0].display.value = '';
+}
+
+function deleteLast() {
+  var currentValue = document.forms[0].display.value;
+  document.forms[0].display.value = currentValue.slice(0, -1);
+}
+
+function calculate() {
+  document.forms[0].display.value = eval(document.forms[0].display.value);
+}
