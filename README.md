@@ -19,7 +19,7 @@ Error Handling: I've implemented robust error handling to ensure that users get 
 ### Steps to Clone the Repository:
 #### Step 1: Go to your Bash
 #### Step 2: Copy code
-git clone https://github.com/your-username/Javascript-Calculator.git
+git clone https://github.com/Laxmi591s/Javascript-Calculator.git
 Open index.html in Your Browser:
 Simply open the index.html file in your preferred web browser, and you're ready to start calculating!
 
